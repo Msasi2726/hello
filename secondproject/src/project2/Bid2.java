@@ -13,7 +13,7 @@ public class Bid2
         ChromeDriver driver=new ChromeDriver();		
         driver.manage().deleteAllCookies();       
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //Launch site
+        //Launch site   
         driver.get("https://www.bidwarriors.com/warriors-treat.php?auid=BE1806");
         //Maximize
         driver.manage().window().maximize();

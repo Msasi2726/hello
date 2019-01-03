@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Irctc
 {
-	@SuppressWarnings("resource")
 	public static void main(String[] args) throws Exception
 	{
+		//start
 		System.setProperty("webdriver.chrome.driver","H:\\Selenium\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);

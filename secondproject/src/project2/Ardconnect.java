@@ -35,6 +35,7 @@ public class Ardconnect
 		Runtime.getRuntime().exec("cmd.exe /c start cmd.exe /k \"appium -a 0.0.0.0 -p 4723\"");
 		URL u=new URL("http://0.0.0.0:4723/wd/hub");
 		//Create object to AndroidDriver to Launch
+		//start
 		AndroidDriver driver;
 		while(1<2)
 		{
