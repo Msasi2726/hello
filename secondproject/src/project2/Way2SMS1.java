@@ -15,30 +15,31 @@ public class Way2SMS1
 {
 	public static void main(String[] args) throws Exception
 	{
+		//starting
 		WebDriver driver=null;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter browser name");
 		String b=sc.nextLine();
 		if(b.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver","H:\\Selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\job\\chromedriver.exe");
         driver=new ChromeDriver();
 		}
 		else if(b.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","H:\\Selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","E:\\job\\geckodriver.exe");
 	        driver=new FirefoxDriver();	
 		}
 		else if(b.equalsIgnoreCase("ie"))
 		{
-			System.setProperty("webdriver.ie.driver","H:\\Selenium\\IEDriverserver.exe");
+			System.setProperty("webdriver.ie.driver","E:\\job\\IEDriverserver.exe");
 	        driver=new InternetExplorerDriver();
 		}
 		else if(b.equalsIgnoreCase("opera"))
 		{
 			OperaOptions c=new OperaOptions();
 			c.setBinary("C:\\Program Files\\Opera\\53.0.2907.99\\opera.exe");
-			System.setProperty("webdriver.opera.driver","H:\\Selenium\\operadriver.exe");
+			System.setProperty("webdriver.opera.driver","E:\\job\\operadriver.exe");
 	        driver=new OperaDriver(c);
 		}
 		else
@@ -56,9 +57,9 @@ public class Way2SMS1
         //Maximize
         driver.manage().window().maximize();
         //Login
-        driver.findElement(By.name("mobileNo")).sendKeys("XXXXX");
-        driver.findElement(By.name("password")).sendKeys("XXXXX");
-        driver.findElement(By.xpath("(//button[text()='Login'])[2]")).click();  
+        driver.findElement(By.name("mobileNo")).sendKeys("9494942726");
+        driver.findElement(By.name("password")).sendKeys("9676530842");
+        driver.findElement(By.xpath("(//button[contains(text(),'Login')]) [1]")).click();  
         //Send MSG with Smile
         driver.findElement(By.name("toMobile")).sendKeys("xxxxxx");
         driver.findElement(By.name("message")).click();
