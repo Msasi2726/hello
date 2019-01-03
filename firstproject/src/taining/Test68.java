@@ -55,6 +55,7 @@ public class Test68
 				}
 			}
 			System.out.println(colors.get(i)+" for "+count);
+			//close
 		}		
 	}
 }
