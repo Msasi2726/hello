@@ -1,11 +1,11 @@
-package package2;
+package dummy;
 
 public class LargestSmallest
 {
 
 	public static void main(String[] args) 
 	{
-
+		//hi suhanth
 		int a[] = new int[] { 23, 34, 13, 64, 72, 90, 10, 15, 9, 27 };
 
 		int min = a[0]; //  assume first elements as smallest number
