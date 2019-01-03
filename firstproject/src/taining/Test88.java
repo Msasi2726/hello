@@ -6,6 +6,7 @@ public class Test88
 {
 	public static void main(String[] args)
 	{
+		//Starting by sasikiran
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a number");
 		String cc=sc.nextLine();
