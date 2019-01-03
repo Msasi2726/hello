@@ -21,6 +21,7 @@ public class Rev1
 {
 	public static void main(String[] args) 
 	{
+		// starting
 		WebDriver driver = null;
 		try
 		{
