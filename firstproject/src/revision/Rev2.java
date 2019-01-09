@@ -4,7 +4,6 @@ public class Rev2
 {
 	public static void main(String[] args) throws Exception
 	{
-	 //starting
      Sample1 obj=new Sample1();
      obj.lunch("http:\\www.gmail.com");
      obj.waiting("//*[@id='identifierId']");

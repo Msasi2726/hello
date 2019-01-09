@@ -1,0 +1,6 @@
+9666122271	valid,ramsjuly4,valid
+9666122272,invalid,ramsjuly4,valid
+9666122271,valid,ramsjune4,invalid
+,invalid,ramsjuly4,valid
+9090,invalid,ramsjuly4,valid
+9666122271,valid,,invalid
