@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+     <script>
+	 function loadData()
+	 {
+     fn.style.visibility="hidden";
+	 ln.style.visibility="hidden";	 
+     }
+	 function getNextPage()
+	 {
+     if(document.forms[0].fname.value==""&&document.forms[0].lname.value=="")
+	 {
+     fn.style.visibility="visible";
+	 ln.style.visibility="visible"; 
+	 }
+	 else
+	 if(document.forms[0].fname.value!==""&&document.forms[0].lname.value=="")
+	 {
+     fn.style.visibility="hidden";
+	 ln.style.visibility="visible"; 
+	 }
+	 else
+	 if(document.forms[0].fname.value==""&&document.forms[0].lname.value!=="")
+	 {
+     fn.style.visibility="visible";
+	 ln.style.visibility="hidden"; 
+	 }
+	 else
+	 if(document.forms[0].fname.value!==""&&document.forms[0].lname.value!=="")
+	 {
+     fn.style.visibility="hidden";
+	 ln.style.visibility="hidden"; 
+	 document.forms[0].full.value=document.forms[0].fname.value+document.forms[0].lname.value;
+	 }
+	 }
+	 </script>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body onLoad="loadData()">
+  <form>
+  <div id="fn"><font color="red">Firstname Required</font></div>Firstname<input type="text" name="fname" id="fname"></br>
+  <div id="ln"><font color="red">Lastname Required</font></div>Lastname<input type="text" name="lname" id="lname">
+  <input type="button" name="next" id="next" value="next" onclick=getNextPage()></br>
+  Fullname:<input type="text" name="full" id="full" readonly>
+  </form>
+ </body>
+</html>

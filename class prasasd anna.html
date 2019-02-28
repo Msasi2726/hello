@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script>
+ function getNextPage()
+     {
+	 alert ("Hi");
+	 if(document.forms[0].uname.value==""&&document.forms[0].pwd.value=="")
+	 {
+     document.getElementById('usr').style.color="red";
+	 document.getElementById('pass').style.color="red";
+	 }
+	 else
+	 if(document.forms[0].uname.value!==""&&document.forms[0].pwd.value=="")
+	 {
+	 document.getElementById('usr').style.color="Green";
+	 document.getElementById('pass').style.color="red";
+	 }
+	 else
+	 if(document.forms[0].uname.value==""&&document.forms[0].pwd.value!=="")
+	 {
+	 document.getElementById('usr').style.color="red";
+	 document.getElementById('pass').style.color="Green";
+	 }
+	 else
+	 if(document.forms[0].uname.value!==""&&document.forms[0].pwd.value!=="")
+	 {
+	 document.getElementById('usr').style.color="Green";
+	 document.getElementById('pass').style.color="Green";
+	 }
+     }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <form><div id="usr">Username:</div><input type="Text" name="uname" id="uname"></br>
+ <div id="pass">Password:</div><input type="password" name="pwd" id="pwd">
+ <input type="button" name="next" id="next" value="next" onClick=getNextPage()>
+ </form>
+</body>
+</html>
